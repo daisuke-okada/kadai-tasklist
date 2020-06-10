@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     
     if @user.save
       flash[:success] = "User が正常に作成されました"
-      redirect_to @user
+      redirect_to tasks_path
     else
       flash.now[:danger] = "User が正常に作成されませんでした"
       render :new
