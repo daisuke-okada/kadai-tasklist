@@ -1,7 +1,5 @@
 <% if logged_in? %>
 	<%= link_to "Tasklist", root_path %>
-	<%= link_to "ユーザ一覧", users_path %>
-	<%= link_to "自分のプロフィール", user_path(current_user) %>
 	<%= link_to "ログアウト", logout_path, method: :delete %>
 
 

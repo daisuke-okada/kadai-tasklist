@@ -1,9 +1,0 @@
-<h1>ユーザ一覧</h1>
-
-<ul>
-	<% @users.each do |user|%>
-		<li><%= link_to user.id, user_path(user)%>:<%= user.name%></li>
-	<% end %>
-</ul>
-
-<%= link_to "タスク投稿画面へ行く", new_task_path %>
