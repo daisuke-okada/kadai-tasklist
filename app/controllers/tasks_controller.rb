@@ -52,7 +52,7 @@ class TasksController < ApplicationController
 		@task = current_user.tasks.find(params[:id])
 		
 	end
-	#strong parameter
+	
 	def task_params
 		params.require(:task).permit(:content, :status)
 		
